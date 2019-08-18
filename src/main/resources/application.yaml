@@ -1,0 +1,8 @@
+data-keeper:
+  enabled: true
+  # 缓存刷新时间 ms
+  interval:
+    white-user: 500
+    # 缓存数据有效时间 ms，值应大于 interval。当刷新任务异常为执行时，利用过期时间容错
+  failover-time:
+    white-user: 1000
