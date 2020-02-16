@@ -3,12 +3,13 @@ package jit.wxs.demo.datakeeper;
 import jit.wxs.demo.bean.User;
 import jit.wxs.demo.datakeeper.cache.WhiteUserCache;
 import jit.wxs.demo.service.WhiteUserService;
+import jit.wxs.demo.util.ThreadPoolUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.util.concurrent.Executors;
+import javax.annotation.PreDestroy;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -19,12 +20,9 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @Component
 public class DataKeeper {
-    /**
-     * DataKeeper任务执行线程数，保持与缓存数量一致
-     */
-    private static final int TASK_SCHEDULER_SIZE = 1;
     private static final long INITIAL_DELAY = 0;
     private static final TimeUnit TIME_UNIT = TimeUnit.MILLISECONDS;
+    private ScheduledExecutorService executorService;
 
     @Autowired
     private DataKeeperProperties properties;
@@ -35,10 +33,10 @@ public class DataKeeper {
 
     @PostConstruct
     public void startDataKeeper() {
-        log.info("[DataKeeper] dataKeeper will start, properties: {}", properties);
+        log.info("[DataKeeper] dataKeeper will start");
 
         if(properties.isEnabled()) {
-            ScheduledExecutorService executorService = Executors.newScheduledThreadPool(TASK_SCHEDULER_SIZE);
+            executorService = ThreadPoolUtils.scheduledExecutor(getExecutorCoreSize(), "dataKeeper-scheduler-executor");
 
             DataKeeperProperties.FailoverTime failoverTime = properties.getFailoverTime();
             DataKeeperProperties.Interval interval = properties.getInterval();
@@ -46,9 +44,20 @@ public class DataKeeper {
             whiteUserCache = new WhiteUserCache(whiteUserService, failoverTime.getWhiteUser());
             executorService.scheduleAtFixedRate(() -> whiteUserCache.execute(), INITIAL_DELAY, interval.getWhiteUser(), TIME_UNIT);
         }
+
+        log.info("[DataKeeper] dataKeeper started success, switch: {}", properties.isEnabled());
+    }
+
+    @PreDestroy
+    private void destroy() {
+        ThreadPoolUtils.shutdown(executorService);
     }
 
     public User getWhiteUser(long userId) {
         return whiteUserCache.get(userId);
+    }
+
+    private static int getExecutorCoreSize() {
+        return Math.max(DataKeeperProperties.FailoverTime.class.getDeclaredFields().length, DataKeeperProperties.Interval.class.getDeclaredFields().length);
     }
 }

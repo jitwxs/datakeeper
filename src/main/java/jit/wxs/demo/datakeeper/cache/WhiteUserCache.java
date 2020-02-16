@@ -3,7 +3,6 @@ package jit.wxs.demo.datakeeper.cache;
 import jit.wxs.demo.bean.User;
 import jit.wxs.demo.datakeeper.bean.WhiteUserData;
 import jit.wxs.demo.service.WhiteUserService;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author jitwxs
  * @date 2019年08月18日 18:01
  */
-@Data
 @Slf4j
 public class WhiteUserCache extends Base {
     public static final String NAME = "whiteUser cache";
