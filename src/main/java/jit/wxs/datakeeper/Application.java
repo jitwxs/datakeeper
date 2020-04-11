@@ -1,4 +1,4 @@
-package jit.wxs.demo;
+package jit.wxs.datakeeper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
