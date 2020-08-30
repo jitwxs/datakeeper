@@ -1,6 +1,6 @@
-package jit.wxs.datakeeper;
+package com.github.jitwxs.datakeeper;
 
-import jit.wxs.datakeeper.util.ThreadPoolUtils;
+import com.github.jitwxs.datakeeper.util.ThreadPoolUtils;
 
 import java.util.concurrent.ThreadPoolExecutor;
 

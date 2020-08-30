@@ -1,4 +1,4 @@
-package jit.wxs.datakeeper.bean;
+package com.github.jitwxs.datakeeper.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

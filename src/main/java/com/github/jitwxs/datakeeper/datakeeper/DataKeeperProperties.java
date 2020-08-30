@@ -1,4 +1,4 @@
-package jit.wxs.datakeeper.datakeeper;
+package com.github.jitwxs.datakeeper.datakeeper;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -1,6 +1,6 @@
-package jit.wxs.datakeeper.datakeeper.bean;
+package com.github.jitwxs.datakeeper.datakeeper.bean;
 
-import jit.wxs.datakeeper.bean.User;
+import com.github.jitwxs.datakeeper.bean.User;
 import lombok.Getter;
 import lombok.Setter;
 

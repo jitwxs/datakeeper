@@ -1,4 +1,4 @@
-package jit.wxs.datakeeper;
+package com.github.jitwxs.datakeeper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package jit.wxs.datakeeper.service.impl;
+package com.github.jitwxs.datakeeper.service.impl;
 
-import jit.wxs.datakeeper.bean.User;
-import jit.wxs.datakeeper.service.WhiteUserService;
+import com.github.jitwxs.datakeeper.service.WhiteUserService;
+import com.github.jitwxs.datakeeper.bean.User;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

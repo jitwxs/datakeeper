@@ -1,4 +1,4 @@
-package jit.wxs.datakeeper.util;
+package com.github.jitwxs.datakeeper.util;
 
 import lombok.extern.slf4j.Slf4j;
 

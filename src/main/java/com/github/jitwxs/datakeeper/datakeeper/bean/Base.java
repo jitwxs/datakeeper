@@ -1,4 +1,4 @@
-package jit.wxs.datakeeper.datakeeper.bean;
+package com.github.jitwxs.datakeeper.datakeeper.bean;
 
 /**
  * DataKeeper 缓存实体基类

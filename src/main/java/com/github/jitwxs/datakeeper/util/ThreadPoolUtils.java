@@ -1,4 +1,4 @@
-package jit.wxs.datakeeper.util;
+package com.github.jitwxs.datakeeper.util;
 
 import com.google.common.base.Joiner;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;

@@ -1,8 +1,8 @@
-package jit.wxs.datakeeper.controller;
+package com.github.jitwxs.datakeeper.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import jit.wxs.datakeeper.bean.User;
-import jit.wxs.datakeeper.datakeeper.DataKeeper;
+import com.github.jitwxs.datakeeper.bean.User;
+import com.github.jitwxs.datakeeper.datakeeper.DataKeeper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

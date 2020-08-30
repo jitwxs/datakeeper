@@ -8,8 +8,8 @@
         <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>jit.wxs</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.github.jitwxs</groupId>
+    <artifactId>datakeeper</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo</name>
     <description>DataKeeper for Spring Boot</description>

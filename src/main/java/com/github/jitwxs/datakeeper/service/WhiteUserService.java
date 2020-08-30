@@ -1,6 +1,6 @@
-package jit.wxs.datakeeper.service;
+package com.github.jitwxs.datakeeper.service;
 
-import jit.wxs.datakeeper.bean.User;
+import com.github.jitwxs.datakeeper.bean.User;
 
 import java.util.List;
 

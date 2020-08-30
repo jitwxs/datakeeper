@@ -1,8 +1,8 @@
-package jit.wxs.datakeeper.datakeeper.cache;
+package com.github.jitwxs.datakeeper.datakeeper.cache;
 
-import jit.wxs.datakeeper.bean.User;
-import jit.wxs.datakeeper.datakeeper.bean.WhiteUserData;
-import jit.wxs.datakeeper.service.WhiteUserService;
+import com.github.jitwxs.datakeeper.bean.User;
+import com.github.jitwxs.datakeeper.datakeeper.bean.WhiteUserData;
+import com.github.jitwxs.datakeeper.service.WhiteUserService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;

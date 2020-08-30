@@ -1,9 +1,9 @@
-package jit.wxs.datakeeper.datakeeper;
+package com.github.jitwxs.datakeeper.datakeeper;
 
-import jit.wxs.datakeeper.bean.User;
-import jit.wxs.datakeeper.datakeeper.cache.WhiteUserCache;
-import jit.wxs.datakeeper.service.WhiteUserService;
-import jit.wxs.datakeeper.util.ThreadPoolUtils;
+import com.github.jitwxs.datakeeper.datakeeper.cache.WhiteUserCache;
+import com.github.jitwxs.datakeeper.util.ThreadPoolUtils;
+import com.github.jitwxs.datakeeper.bean.User;
+import com.github.jitwxs.datakeeper.service.WhiteUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
