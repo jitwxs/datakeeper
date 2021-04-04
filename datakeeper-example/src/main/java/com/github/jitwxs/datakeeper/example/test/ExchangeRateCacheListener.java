@@ -1,7 +1,7 @@
 package com.github.jitwxs.datakeeper.example.test;
 
 import com.github.jitwxs.datakeeper.example.cache.ExchangeRateCache;
-import com.github.jitwxs.datakeeper.listener.CacheListener;
+import com.github.jitwxs.datakeeper.CacheListener;
 import org.springframework.stereotype.Service;
 
 /**

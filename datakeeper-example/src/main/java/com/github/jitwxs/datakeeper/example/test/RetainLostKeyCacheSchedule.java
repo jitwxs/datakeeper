@@ -1,6 +1,6 @@
 package com.github.jitwxs.datakeeper.example.test;
 
-import com.github.jitwxs.datakeeper.core.AbstractCache;
+import com.github.jitwxs.datakeeper.AbstractCache;
 import com.github.jitwxs.datakeeper.example.cache.RetainLostKeyCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;

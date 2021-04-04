@@ -1,4 +1,4 @@
-package com.github.jitwxs.datakeeper.core;
+package com.github.jitwxs.datakeeper;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

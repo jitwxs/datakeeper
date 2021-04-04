@@ -1,6 +1,4 @@
-package com.github.jitwxs.datakeeper.listener;
-
-import com.github.jitwxs.datakeeper.core.AbstractCache;
+package com.github.jitwxs.datakeeper;
 
 /**
  * Cache Listener，实现类需交由 Spring 容器进行管理

@@ -6,7 +6,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 /**
- * 验证 {@link com.github.jitwxs.datakeeper.core.AbstractCache} 定时刷新
+ * 验证 {@link com.github.jitwxs.datakeeper.AbstractCache} 定时刷新
  * @author jitwxs
  * @date 2021年04月04日 20:13
  */

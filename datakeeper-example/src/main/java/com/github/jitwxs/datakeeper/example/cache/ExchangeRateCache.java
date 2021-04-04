@@ -1,7 +1,7 @@
 package com.github.jitwxs.datakeeper.example.cache;
 
-import com.github.jitwxs.datakeeper.core.AbstractCache;
-import com.github.jitwxs.datakeeper.core.CacheRefreshRate;
+import com.github.jitwxs.datakeeper.AbstractCache;
+import com.github.jitwxs.datakeeper.CacheRefreshRate;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Service;

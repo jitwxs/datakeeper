@@ -1,6 +1,5 @@
-package com.github.jitwxs.datakeeper.core;
+package com.github.jitwxs.datakeeper;
 
-import com.github.jitwxs.datakeeper.listener.CacheListener;
 import com.google.common.collect.Maps;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
@@ -8,7 +7,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import java.util.*;
 
 /**
- * 缓存业务类，实现类需交由 Spring 容器进行管理
+ * 缓存基类，实现类需交由 Spring 容器进行管理
  * @author jitwxs
  * @date 2021年04月04日 17:36
  */
@@ -23,7 +22,7 @@ public abstract class AbstractCache<K, V> {
 
     private final List<CacheListener> listenerList = new LinkedList<>();
 
-    private final String CACHE_NAME = getClass().getSimpleName();
+    protected final String CACHE_NAME = getClass().getSimpleName();
 
     /**
      * 抽象方法，加载缓存数据
