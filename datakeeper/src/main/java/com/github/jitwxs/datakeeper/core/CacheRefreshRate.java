@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 任务刷新频率
+ * 缓存刷新频率
  * @author jitwxs
  * @date 2021年04月04日 18:23
  */

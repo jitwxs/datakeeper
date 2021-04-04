@@ -13,6 +13,12 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 汇率缓存
+ *
+ * <ul>
+ *     <li>该类模拟了缓存的定时刷新，首次100ms，后续500ms的频率定时刷新</li>
+ *     <li>当刷新次数超过 5 次时，移除了一个键，模拟了缓存的键变化</li>
+ * </ul>
+ *
  * @author jitwxs
  * @date 2021年04月04日 19:31
  */

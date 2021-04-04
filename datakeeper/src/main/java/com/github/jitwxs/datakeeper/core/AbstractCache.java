@@ -33,12 +33,12 @@ public abstract class AbstractCache<K, V> {
     /**
      * 抽象方法，设置缓存刷新频率
      *
-     * @return 缓存刷新频率，当返回 null 时，永不刷新
+     * @return 缓存刷新频率，当返回 null 时，不定时刷新
      */
     public abstract CacheRefreshRate refreshRate();
 
     /**
-     * 是否保留已经丢失的键，默认不保留
+     * 是否保留被删除的键，默认不保留
      *
      * <p/>例如，首次 {@link #loadCache()} 时存在名为 {@code foo} 的键。下次加载时该键不存在，如果返回 true 时，将仍然保留首次的值
      */
@@ -92,7 +92,7 @@ public abstract class AbstractCache<K, V> {
     /**
      * 刷新缓存
      */
-    public synchronized void refreshCache() {
+    protected synchronized void refreshCache() {
         try {
             this.slaveMap = this.loadCache();
 

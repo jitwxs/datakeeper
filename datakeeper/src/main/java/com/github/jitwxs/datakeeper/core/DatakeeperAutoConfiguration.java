@@ -26,13 +26,14 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 @Component
-@ConditionalOnBean(AbstractCache.class) // 按需加载
+@ConditionalOnBean(AbstractCache.class)
 public class DatakeeperAutoConfiguration {
     /**
      * 业务定义的所有缓存
      */
     @Autowired(required = false)
     private List<AbstractCache> defineCacheList;
+
     /**
      * 业务定义的所有缓存监听器
      */
