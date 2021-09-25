@@ -1,4 +1,4 @@
-package com.github.jitwxs.datakeeper.example.cache;
+package com.github.jitwxs.datakeeper.cache;
 
 import com.github.jitwxs.datakeeper.AbstractLazyCache;
 import com.github.jitwxs.datakeeper.CacheRefreshRate;

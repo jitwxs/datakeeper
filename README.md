@@ -44,8 +44,3 @@ mvn clean install -Dmaven.test.skip=true
     <version>${datakeeper.version}</version>
 </dependency>
 ```
-
-## 04 Example
-
-您可运行 `datakeeper-sample` 项目，该项目为您展示了如何使用 `datakeeper`。
-

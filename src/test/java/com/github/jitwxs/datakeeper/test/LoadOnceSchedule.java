@@ -1,6 +1,6 @@
-package com.github.jitwxs.datakeeper.example.test;
+package com.github.jitwxs.datakeeper.test;
 
-import com.github.jitwxs.datakeeper.example.cache.LoadOnceCache;
+import com.github.jitwxs.datakeeper.cache.LoadOnceCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
